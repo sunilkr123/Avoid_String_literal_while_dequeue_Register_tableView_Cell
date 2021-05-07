@@ -1,5 +1,5 @@
 
-# How to avoid string literal while registering and creating cell for tableVie
+# How to avoid string literal while registering and creating cell for tableView
 
 this repository is all about that how to avoid the string literal while registering the cell and dequeueing(Creating cell ) the cell in cell for row at Metthod
 
