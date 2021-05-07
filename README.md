@@ -18,7 +18,7 @@ Add two file to your project
 # 
  1.How to register xib's cell to our viewController 
  
-   Note:- if you have created xib then tehre ia a need of register the cel to the tableView
+   Note:- if you have created xib then there ia a need to register the cel to the tableView
  
   //register the cell to the tableView
   
