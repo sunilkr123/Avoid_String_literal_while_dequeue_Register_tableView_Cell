@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmployeeHeaderView" customModule="GenricTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcO-ew-KtI">
+                    <rect key="frame" x="5" y="5" width="404" height="40"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FCT-qY-a3m">
+                            <rect key="frame" x="15" y="2" width="374" height="36"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDo-mN-iss">
+                                    <rect key="frame" x="0.0" y="0.0" width="118" height="36"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFV-0F-SZk">
+                                    <rect key="frame" x="128" y="0.0" width="118" height="36"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Department" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q17-qk-rzM">
+                                    <rect key="frame" x="256" y="0.0" width="118" height="36"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="GZb-ay-iqO"/>
+                        <constraint firstItem="FCT-qY-a3m" firstAttribute="leading" secondItem="lcO-ew-KtI" secondAttribute="leading" constant="15" id="MkT-t2-jyo"/>
+                        <constraint firstAttribute="bottom" secondItem="FCT-qY-a3m" secondAttribute="bottom" constant="2" id="Qma-Bd-AkK"/>
+                        <constraint firstItem="FCT-qY-a3m" firstAttribute="top" secondItem="lcO-ew-KtI" secondAttribute="top" constant="2" id="e23-bR-vht"/>
+                        <constraint firstAttribute="trailing" secondItem="FCT-qY-a3m" secondAttribute="trailing" constant="15" id="hH6-gV-Vrd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="lcO-ew-KtI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="00F-lV-JPc"/>
+                <constraint firstAttribute="trailing" secondItem="lcO-ew-KtI" secondAttribute="trailing" constant="5" id="Wq3-fA-yza"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lcO-ew-KtI" secondAttribute="bottom" constant="5" id="Z9z-pu-0Uw"/>
+                <constraint firstItem="lcO-ew-KtI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="ojt-tw-hl8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labelDepartment" destination="Q17-qk-rzM" id="6Bh-je-HDQ"/>
+                <outlet property="labelId" destination="QDo-mN-iss" id="hqO-fU-3sI"/>
+                <outlet property="labelName" destination="tFV-0F-SZk" id="ncI-gX-faL"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
