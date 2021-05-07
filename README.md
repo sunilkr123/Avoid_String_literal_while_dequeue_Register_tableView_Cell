@@ -1,4 +1,4 @@
-# Avoid_String_literal_while_dequeue_Register_tableView_Cell
+
 # How to avoid string literal
 
 this repository is all about that how to avoid the string literal while registering the cell and dequeueing(Creating cell ) the cell in cell for row at Metthod
